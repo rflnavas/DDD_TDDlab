@@ -1,4 +1,4 @@
-package com.rnr;
+package com.rnr.error;
 
 public class EmptyValueException extends RuntimeException{
 
