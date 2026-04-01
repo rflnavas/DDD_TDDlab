@@ -15,8 +15,9 @@ public class CountryTest {
 
     @Test
     public void shouldCountryNotCreatedWhenEmptyName() {
-        Assertions.assertThatThrownBy(() -> new Country("ES", "España"))
+        Assertions.assertThatThrownBy(() -> new Country("ES", ""))
                 .isInstanceOf(EmptyValueException.class)
                 .hasMessage("Name for country cannot be empty");
     }
+
 }

@@ -8,6 +8,9 @@ public record Country (String isoCode, String name) {
       if(StringUtility.isEmpty(isoCode)) {
           throw new EmptyValueException("isoCode cannot be empty");
       }
+      if(StringUtility.isEmpty(name)) {
+          throw new EmptyValueException("Name for country cannot be empty");
+      }
 
   }
 }
